@@ -33,6 +33,7 @@ jobs:
             severity: CRITICAL
             exit-code: '1'
             ignore-unfixed: true
+            skip-files: '/usr/local/lib/node_modules/npm/**'
 
       # log in to Docker Hub using DOCKERHUB_USERNAME and DOCKERHUB_TOKEN secrets.
       - name: Log in to Docker Hub

@@ -14,7 +14,6 @@ WORKDIR /app
 COPY app/package*.json ./
 RUN npm ci --omit=dev
 RUN npm install proxy-addr@2.0.8 --omit=dev --no-audit --no-fund
-RUN npm install -g npm@10.9.0 --no-audit --no-fund
 
 # TODO(step-4c): copy the rest of the app source into /app.
 COPY app . .
